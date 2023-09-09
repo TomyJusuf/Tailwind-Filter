@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../dist/output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="h-screen flex justify-center items-center">
+      <div class="bg-[#322e59] text-[#bcbacf] p-8 rounded-[20px] shadow-2xl">
+        <div class="w-[250px] text-3xl flex justify-between items-center">
+          <h1>Filter</h1>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-8 h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+        <div class="relative mt-5 flex flex-col w-[250px]">
+          <h2 class="uppercase text-[12px] mb-2">Search by Keyword</h2>
+          <input
+            type="text"
+            name=""
+            id=""
+            class="bg-[#1b183b] py-[8px] pl-10 outline-none placeholder:text-[#bcbacf] rounded-md"
+            placeholder="Search jobs"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 absolute mt-[33px] left-[5px]"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+            />
+          </svg>
+        </div>
+        <div class="mt-5">
+          <h2 class="uppercase text-xs mb-2">View</h2>
+          <div class="flex flex-row items-center">
+            <input
+              type="radio"
+              name=""
+              id="all-job"
+              class="w-5 h-5 accent-[#bcbacf]"
+            />
+            <label for="all-job" class="pl-[5px]">All job posts</label>
+          </div>
+
+          <div class="flex flex-row items-center">
+            <input
+              type="radio"
+              name=""
+              id="active-job"
+              class="w-5 h-5 accent-[#bcbacf]"
+            />
+            <label for="active-job" class="pl-[5px]">Active job posts</label>
+          </div>
+
+          <div class="flex flex-row items-center">
+            <input
+              type="radio"
+              name=""
+              id="archive-job"
+              class="w-5 h-5 accent-[#bcbacf]"
+            />
+            <label for="archive-job" class="pl-[5px]">Archived job posts</label>
+          </div>
+        </div>
+        <div class="mt-8">
+          <h2 class="uppercase text-[12px] mb-2">include</h2>
+          <div class="flex items-center">
+            <input
+              type="checkbox"
+              name=""
+              id="shared-jobs"
+              class="w-5 h-5 mr-2 rounded-xl accent-[#bcbacf]"
+            />
+            <label for="shared-jobs">Jobs shared with me</label>
+          </div>
+        </div>
+        <div class="mt-14">
+          <button
+            class="btn bg-yellow-500 text-[#322e59] px-14 py-3 rounded-lg w-[250px]"
+          >
+            Save changes
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
